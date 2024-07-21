@@ -13,17 +13,17 @@ You have found the easiest way to install & manage WireGuard on any Linux host!
 </p>
 
 ## Features
-* All-in-one: WireGuard + Web UI.
-* Easy installation, simple to use.
-* List, create, edit, delete, enable & disable clients.
-* Show a client's QR code.
-* Download a client's configuration file.
-* Statistics for which clients are connected.
-* Tx/Rx charts for each connected client.
-* Gravatar support.
-* Automatic Light / Dark Mode
-* Multilanguage Support
-* UI_TRAFFIC_STATS (default off)
+* 一体化：WireGuard + Web UI。
+*  安装简便，使用简单。
+* 列出、创建、编辑、删除、启用和禁用客户端。
+* 显示客户的二维码。
+* 下载客户端的配置文件。
+* 有关已连接客户端的统计信息。
+* 每个连接客户端的 Tx/Rx 图表。
+* Gravatar 支持。
+* 自动亮/暗模式
+* 多语言支持
+* UI_TRAFFIC_STATS（默认关闭）
 
 ## Requirements
 

@@ -12,8 +12,8 @@ services:
       - WG_HOST=raspberrypi.local
 
       # Optional:
-      # - PASSWORD=foobar123 (deprecated, see readme)
-      # - PASSWORD_HASH=$$2y$$10$$hBCoykrB95WSzuV4fafBzOHWKu9sbyVa34GJr8VV5R/pIelfEMYyG (needs double $$, hash of 'foobar123'; see "How_to_generate_an_bcrypt_hash.md" for generate the hash)
+      # - PASSWORD=easywireguard.mynameiszt.eu.org
+      # - PASSWORD_HASH=6d774450f32f8a849c2f29fce666e894e678b6c0a356e5118096b03cc3989c78
       # - PORT=51821
       # - WG_PORT=51820
       # - WG_CONFIG_PORT=92820

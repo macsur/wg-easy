@@ -14,7 +14,7 @@ You have found the easiest way to install & manage WireGuard on any Linux host!
 
 ## Features
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ByxE6zxeyLY&t/0.jpg)](https://www.youtube.com/watch?v=ByxE6zxeyLY&t)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ByxE6zxeyLY/0.jpg)](https://www.youtube.com/watch?v=ByxE6zxeyLY)
 
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/W9hA31FuQSY/0.jpg)](https://www.youtube.com/watch?v=W9hA31FuQSY)

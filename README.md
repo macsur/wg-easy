@@ -13,9 +13,11 @@ You have found the easiest way to install & manage WireGuard on any Linux host!
 </p>
 
 ## Features
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ByxE6zxeyLY?si=BBzqnnz5MuaMmoEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/BBzqnnz5MuaMmoEW/0.jpg)](https://www.youtube.com/watch?v=BBzqnnz5MuaMmoEW)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W9hA31FuQSY?si=PCcXgjxb2ZSaKR0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PCcXgjxb2ZSaKR0w/0.jpg)](https://www.youtube.com/watch?v=PCcXgjxb2ZSaKR0w)
+
 * 一体化：WireGuard + Web UI。
 *  安装简便，使用简单。
 * 列出、创建、编辑、删除、启用和禁用客户端。

@@ -13,6 +13,9 @@ You have found the easiest way to install & manage WireGuard on any Linux host!
 </p>
 
 ## Features
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ByxE6zxeyLY?si=BBzqnnz5MuaMmoEW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W9hA31FuQSY?si=PCcXgjxb2ZSaKR0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 * 一体化：WireGuard + Web UI。
 *  安装简便，使用简单。
 * 列出、创建、编辑、删除、启用和禁用客户端。
@@ -27,12 +30,12 @@ You have found the easiest way to install & manage WireGuard on any Linux host!
 
 ## Requirements
 
-* A host with a kernel that supports WireGuard (all modern kernels).
-* A host with Docker installed.
+* 具有支持 WireGuard 内核的主机（所有现代内核）。
+*安装了 Docker 的主机。
 
 ## Versions
 
-We provide more then 1 docker image to get, this will help you decide which one is best for you.
+提供多个 docker 镜像供您获取，这将帮助您决定哪一个最适合您。
 
 | tag | Branch | Example | Description |
 | - | - | - | - |
@@ -45,7 +48,7 @@ We provide more then 1 docker image to get, this will help you decide which one 
 
 ### 1. Install Docker
 
-If you haven't installed Docker yet, install it by running:
+如果你尚未安装 Docker，请运行以下命令进行安装：
 
 ```bash
 curl -sSL https://get.docker.com | sh
@@ -55,21 +58,21 @@ exit
 
 And log in again.
 
-### 2. Run WireGuard Easy
+### 2. 轻松运行 WireGuard
 
-To automatically install & run wg-easy, simply run:
+要自动安装并运行 wg-easy，只需运行：
 
 ```
   docker run -d \
   --name=wg-easy \
-  -e LANG=de \
+  -e LANG=en \
   -e WG_HOST=<🚨YOUR_SERVER_IP> \
   -e PASSWORD_HASH=<🚨YOUR_ADMIN_PASSWORD_HASH> \
-  -e PORT=51821 \
-  -e WG_PORT=51820 \
+  -e PORT=31821 \
+  -e WG_PORT=31820 \
   -v ~/.wg-easy:/etc/wireguard \
-  -p 51820:51820/udp \
-  -p 51821:51821/tcp \
+  -p 31820:31820/udp \
+  -p 31821:31821/tcp \
   --cap-add=NET_ADMIN \
   --cap-add=SYS_MODULE \
   --sysctl="net.ipv4.conf.all.src_valid_mark=1" \
@@ -80,7 +83,7 @@ To automatically install & run wg-easy, simply run:
 
 > 💡 Replace `YOUR_SERVER_IP` with your WAN IP, or a Dynamic DNS hostname.
 >
-> 💡 Replace `YOUR_ADMIN_PASSWORD_HASH` with a bcrypt password hash to log in on the Web UI. See [How_to_generate_an_bcrypt_hash.md](./How_to_generate_an_bcrypt_hash.md) for know how generate the hash.
+> 💡 Replace `YOUR_ADMIN_PASSWORD_HASH` 使用 bcrypt 密码哈希值替换以登录 Web UI. See [How_to_generate_an_bcrypt_hash.md](./How_to_generate_an_bcrypt_hash.md) for know how generate the hash.
 
 The Web UI will now be available on `http://0.0.0.0:51821`.
 
@@ -96,7 +99,7 @@ Are you enjoying this project? [Buy Emile a beer!](https://github.com/sponsors/W
 
 ## Options
 
-These options can be configured by setting environment variables using `-e KEY="VALUE"` in the `docker run` command.
+可以通过在命令中使用设置环境变量来配置这些选项 `-e KEY="VALUE"` in the `docker run` command.
 
 | Env | Default | Example | Description                                                                                                                                          |
 | - | - | - |------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -123,9 +126,9 @@ These options can be configured by setting environment variables using `-e KEY="
 
 > If you change `WG_PORT`, make sure to also change the exposed port.
 
-## Updating
+## 更新
 
-To update to the latest version, simply run:
+要更新到最新版本，只需运行：
 
 ```bash
 docker stop wg-easy
@@ -133,7 +136,10 @@ docker rm wg-easy
 docker pull ghcr.io/wg-easy/wg-easy
 ```
 
-And then run the `docker run -d \ ...` command above again.
+And then run the `docker run -d \ ...` 再次运行上述命令。
+
+使用 Docker Compose，WireGuard Easy 可以通过单个命令进行更新：（ docker compose up --detach --pull always如果在 Compose 文件中指定了图像标签但不是latest，请确保将其更改为所需的标签；默认情况下，它会被省略并 默认为latest）。
+如果拉取了较新的图像，WireGuared Easy 容器将自动重新创建。
 
 With Docker Compose WireGuard Easy can be updated with a single command:
 `docker compose up --detach --pull always` (if an image tag is specified in the
